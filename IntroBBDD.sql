@@ -18,7 +18,7 @@ FROM bookings.airplanes_data;
 -- 4. Con el resultado anterior visualizado previamente, escribe una consulta que extraiga los identificadores de vuelo que han volado con un Boeing 737. (Código Modelo Avión = 733)
 SELECT flight_id, route_no, airplane_code
 FROM bookings.timetable
-WHERE airplane_code = '733';
+WHERE airplane_code IN ('733', '7M7');
 
 -- 5. Escribe una consulta que te muestre la información detallada de los tickets que han comprado las personas que se llaman Irina.
 SET client_encoding TO 'UTF8';
